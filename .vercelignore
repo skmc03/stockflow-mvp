@@ -1,0 +1,4 @@
+backend/
+prisma/
+node_modules/
+*.db

@@ -1,0 +1,12 @@
+node_modules
+
+# Environment variables — never commit these
+.env
+backend/.env
+frontend/.env.local
+
+# SQLite database files
+*.db
+*.db-journal
+
+/generated/prisma
