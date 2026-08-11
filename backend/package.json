@@ -1,18 +1,37 @@
 {
+
   "name": "stockflow-backend",
+
   "version": "1.0.0",
+
   "main": "server.js",
+
   "scripts": {
+
+    "postinstall": "npx prisma generate --schema ../prisma/schema.prisma && npx prisma migrate deploy --schema ../prisma/schema.prisma",
+
     "start": "npx prisma generate && node server.js",
+
     "dev": "node server.js"
+
   },
+
   "dependencies": {
+
     "@prisma/client": "^6.19.3",
+
     "bcryptjs": "^3.0.3",
+
     "cors": "^2.8.6",
+
     "dotenv": "^17.4.2",
+
     "express": "^5.2.1",
+
     "express-rate-limit": "^7.5.0",
+
     "jsonwebtoken": "^9.0.3"
+
   }
+
 }
